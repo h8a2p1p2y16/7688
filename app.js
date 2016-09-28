@@ -49,6 +49,10 @@ function dialog(text) {
 		speak('啊啊啊啊啊啊啊啊啊啊');
 	else if (String(text).indexOf('難聽') > -1)
 		speak('我好難過嗚嗚嗚嗚嗚');
+	else if (String(text).indexOf('開') > -1)
+		speak('開');
+	else if (String(text).indexOf('關') > -1)
+		speak('關');
 	else 
 		speak('聽不懂，可以再說一次嘛');
 	console.log(text);
