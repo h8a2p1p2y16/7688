@@ -51,7 +51,15 @@ function dialog(text) {
 		speak('我好難過嗚嗚嗚嗚嗚');
 	else if (String(text).indexOf('開') > -1)
 		speak('開');
+	else if (String(text).indexOf('打開') > -1)
+		speak('開');
+	else if (String(text).indexOf('open') > -1)
+		speak('開');
 	else if (String(text).indexOf('關') > -1)
+		speak('關');
+	else if (String(text).indexOf('關閉') > -1)
+		speak('關');
+	else if (String(text).indexOf('close') > -1)
 		speak('關');
 	else 
 		speak('聽不懂，可以再說一次嘛');
